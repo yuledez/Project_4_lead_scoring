@@ -27,6 +27,8 @@ This project aims to develop a predictive model to improve lead conversion rates
 
 By leveraging predictive modeling, we assign a conversion score to each lead, allowing the sales team to focus on high-potential prospects and allocate their time more effectively. The model will enhance the current manual process by using data-driven insights, improving both the accuracy and efficiency of lead prioritization.
 
+![SalesFunnel](../Images/MktFunnel.jpg)
+
 #### Key Metrics:
 - **Precision**: Ensures the team spends less time on false positives, focusing on high-value prospects.
 - **Recall**: Ensures a broad range of potential leads are captured, preventing missed opportunities and optimizing the sales funnel.
