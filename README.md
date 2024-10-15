@@ -27,7 +27,7 @@ This project aims to develop a predictive model to improve lead conversion rates
 
 By leveraging predictive modeling, we assign a conversion score to each lead, allowing the sales team to focus on high-potential prospects and allocate their time more effectively. The model will enhance the current manual process by using data-driven insights, improving both the accuracy and efficiency of lead prioritization.
 
-![SalesFunnel](../Images/MktFunnel.jpg)
+![SalesFunnel](/Images/MktFunnel.JPG)
 
 #### Key Metrics:
 - **Precision**: Ensures the team spends less time on false positives, focusing on high-value prospects.
@@ -53,9 +53,26 @@ The dataset consists of 9,241 rows and 37 columns sourced from Kaggle, capturing
    - Handling missing values, outliers, and categorical data encoding.
    - Standardizing numeric values using scaling techniques.
 
-### 2. **Exploratory Data Analysis (EDA)**
+### 2. **Exploratory Data Analysis (EDA)/Feature Engineering and Transformations**
    - Analyzing distributions and correlations between features.
    - Feature Engineering: Creating new variables based on user engagement levels.
+   - EDA/ Feature Engineering Examples
+   - Category Aggergation <br>
+     ![Category Aggregation](/Images/CategoryAggregation.JPG)
+     
+   - Handling Outliers: #Outlier Treatment (EDA): Remove top & bottom 5% of the Column Outlier values<br>
+     ![Numerical Outliers](/Images/numericaloutliers.JPG)
+     
+   - Correlation Heatmap of numerical features<br>
+     ![Numerical Outliers](/Images/correlationheatmap.JPG)
+     
+   - Feature Importances (from Random Forest analysis)<br>
+     ![Numerical Outliers](/Images/FeatureImportances.JPG)
+
+   **Data preprocessing included:**
+   - Numerical scaling: Ensuring that numeric features were standardized using scaling techniques.
+   - Categorical encoding: Applying one-hot encoding to handle categorical features, making them usable in machine learning models.
+
 
 ### 3. **Model Building**
    - Testing multiple models: Logistic Regression (baseline), Random Forest, Neural Networks.
@@ -113,6 +130,9 @@ The goal of this project was to boost lead conversion rates (starting at 38%) by
 The dataset presented a class imbalance, with more "not converted" leads (5,594) compared to "converted" leads (3,425). Despite this, the models performed well due to effective feature engineering and data preprocessing. The success criteria—achieving over 85% accuracy—was met across all models.
 
 ### Final Results
+ ![RocCurves](/Images/ROCCurveAllModels.JPG)
+
+![RocCurves](/Images/modelscomparisontable.JPG)
 - **Accuracy**: Models achieved between 92% - 94%.
 - **Precision**: Up to 95%, reducing false positives and improving focus on high-quality leads.
 - **Recall**: As high as 90%, ensuring that valuable opportunities weren’t missed.
