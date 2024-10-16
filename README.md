@@ -57,7 +57,7 @@ The dataset consists of 9,241 rows and 37 columns sourced from Kaggle, capturing
    - Analyzing distributions and correlations between features.
    - Feature Engineering: Creating new variables based on user engagement levels.
    - EDA/ Feature Engineering Examples
-   - Category Aggergation <br>
+   - Category Aggregation <br>
      ![Category Aggregation](/Images/CategoryAggregation.JPG)
      
    - Handling Outliers: #Outlier Treatment (EDA): Remove top & bottom 5% of the Column Outlier values<br>
