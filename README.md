@@ -143,9 +143,15 @@ The predictive model helps the sales team focus on the most promising leads, lea
 
 ---
 
-## Recommendation
+##### **Recommendation:**
 
-Based on the evaluation, the **Random Forest model with Hyperparameter Tuning** is recommended for deployment. It offers the best balance between precision, recall, and accuracy, making it the optimal solution for prioritizing high-quality leads and boosting conversions.
+Given the results, the **Random Forest (Default) model** is recommended. It consistently performed the best across key metrics, including **R²**, **MSE**, **MAE**, and **RMSE**, making it the most reliable solution for prioritizing high-quality leads. The default Random Forest model outperforms the hyperparameter-tuned version, logistic regression models, and the deep learning model, striking the best balance between predictive accuracy and error minimization.
+
+Despite the **initial class imbalance** in the dataset, the models performed exceptionally well due to **thorough analysis**, **feature engineering**, and **tuning efforts**. All models surpassed the project target of over **85% accuracy**, but **Random Forest (Default)** provided the most balanced and robust performance.
+
+In summary, the **Random Forest (Default)** model is the **optimal choice** to help the sales team **prioritize leads** and **boost conversions** while optimizing resource allocation.
+
+To improve results, a combination of enhanced feature engineering (even though it was very thorough, it can always be improved ;) ), advanced hyperparameter tuning, ensemble methods (Stacking or Blending Models: Combine the best-performing models like  Random Forest, Logistic Regression, Deep Learning into a stacked ensembl ), and deep learning architecture optimization can be explored. Cross-validation and error analysis will also help identify areas for improvement. Techniques like boosting and stacking can further improve model performance, particularly in addressing class imbalance and increasing predictive power.
 
 ---
 
